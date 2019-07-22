@@ -1,5 +1,6 @@
 .main {
 	text-align: center;
+	height: 100vh;
 }
 
 .main__image {
@@ -14,4 +15,24 @@
 .main__text {
 	font-size: 30px;
 	color: #4b334d;
+}
+
+.block__list-item {
+	position: relative;
+}
+
+.block__list-item:before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, .87);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
