@@ -15,9 +15,10 @@ export class CounterComponent implements OnInit {
 	public value = 1;
 	public counter$: Observable<{ count: number }>;
 	// public counterValue$: Observable<number>;
+
 	public constructor(private store: Store<CounterStateInterface>) {}
 
-	public ngOnInit() {
+	public ngOnInit(): void {
 		this.counter$ = this.store.pipe(select('counter'));
 
 		// this.counterValue$ = this.store.select(selectCounter);

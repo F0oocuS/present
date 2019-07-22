@@ -8,3 +8,33 @@
 	padding: 50px 15px;
 	max-width: 991px;
 }
+
+.header__logo {
+	margin-right: 15px;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.header__nav {
+	margin-left: auto;
+}
+
+.header__nav-list {
+	list-style: none;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+}
+
+.list__item:not(:first-child) {
+	margin-left: 20px;
+}
+
+.list__link {
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}

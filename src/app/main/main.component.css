@@ -1,0 +1,17 @@
+.main {
+	text-align: center;
+}
+
+.main__image {
+	max-width: 300px;
+}
+
+.main__title {
+	font-size: 60px;
+	color: #4b334d;
+}
+
+.main__text {
+	font-size: 30px;
+	color: #4b334d;
+}

@@ -1,0 +1,11 @@
+<div class="rxjs">
+	<mat-card class="rxjs__content">
+		<mat-card-title>RxJs</mat-card-title>
+
+		<button mat-raised-button color="primary" (click)="onSendGet()">Get items</button>
+
+		<mat-list>
+			<mat-list-item *ngFor="let item of items;">{{ item?.name }} ({{ item?.count }})</mat-list-item>
+		</mat-list>
+	</mat-card>
+</div>

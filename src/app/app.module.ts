@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 
-import { MatToolbarModule, MatCardModule, MatButtonModule, MatSliderModule, MatCheckboxModule } from '@angular/material';
+import { MatToolbarModule, MatCardModule, MatButtonModule, MatSliderModule, MatCheckboxModule, MatListModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,11 +11,16 @@ import { CounterComponent } from './counter/counter.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { counterReducer } from './store/store.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { MainComponent } from './main/main.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		CounterComponent
+		CounterComponent,
+		RxjsComponent,
+		MainComponent
 	],
 	imports: [
 		BrowserModule,
@@ -26,8 +31,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 		MatButtonModule,
 		MatSliderModule,
 		MatCheckboxModule,
+		MatListModule,
 		ReactiveFormsModule,
 		FormsModule,
+		HttpClientModule,
 		StoreModule.forRoot({ counter: counterReducer }),
 		StoreDevtoolsModule.instrument({ maxAge: 25 }),
 	],
