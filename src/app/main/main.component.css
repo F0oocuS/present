@@ -17,6 +17,10 @@
 	color: #4b334d;
 }
 
+.block__list {
+	margin-bottom: 200px;
+}
+
 .block__list-item {
 	position: relative;
 }
@@ -35,4 +39,8 @@
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+
+.block__image {
+	margin-bottom: 200px;
 }

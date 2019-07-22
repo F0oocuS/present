@@ -14,13 +14,15 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ThnxComponent } from './thnx/thnx.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		CounterComponent,
 		RxjsComponent,
-		MainComponent
+		MainComponent,
+		ThnxComponent
 	],
 	imports: [
 		BrowserModule,
