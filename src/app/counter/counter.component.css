@@ -1,0 +1,22 @@
+.counter {
+	margin: auto;
+	max-width: 500px;
+}
+
+.counter__title {
+	padding: 50px;
+	font-size: 72px;
+	text-align: center;
+}
+
+.counter__button {
+	margin: 0 10px;
+}
+
+.counter__slider {
+	padding: 100px 0 20px;
+}
+
+mat-slider {
+	width: 100%;
+}

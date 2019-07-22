@@ -1,0 +1,25 @@
+<mat-card class="counter">
+	<mat-card-title class="counter__title">{{ (counter$ | async).count }}</mat-card-title>
+
+	<!--<mat-card-title class="counter__title">{{ counterValue$ | async }}</mat-card-title>-->
+
+	<button class="counter__button" mat-raised-button color="primary" (click)="onIncrement()">Increment ( + )</button>
+	<button class="counter__button" mat-raised-button color="primary" (click)="onDecrement()">Decrement ( - )</button>
+	<button class="counter__button" mat-raised-button color="warn" (click)="onReset()">Reset</button>
+	<button class="counter__button" mat-raised-button color="accent" (click)="onMultiply()">Multiply</button>
+
+
+	<div class="counter__slider">
+		<mat-slider thumbLabel tickInterval="2"
+			[max]="20"
+			[min]="1"
+			[step]="1"
+			[(ngModel)]="value"
+		>
+		</mat-slider>
+	</div>
+
+	<div class="counter__slider-value">
+		Value: {{ value }}
+	</div>
+</mat-card>
