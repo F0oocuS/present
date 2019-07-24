@@ -3,7 +3,7 @@ import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import { CounterStateInterface } from '../store/store.reducer';
-import { CounterDecrement, CounterIncrement, CounterMultiply, CounterRead, CounterReadError, CounterReset } from '../store/store.action';
+import { CounterDecrement, CounterIncrement, CounterMultiply, CounterRead, CounterReset } from '../store/store.action';
 // import { selectCounter } from '../store/store.selector';
 
 @Component({
@@ -24,7 +24,7 @@ export class CounterComponent implements OnInit {
 		// this.counterValue$ = this.store.select(selectCounter);
 
 		// For effects
-		// this.store.dispatch(new CounterRead());
+		this.store.dispatch(new CounterRead());
 	}
 
 	public onIncrement(): void {
