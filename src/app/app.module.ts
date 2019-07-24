@@ -41,7 +41,7 @@ import { StoreEffect } from './store/store.effect';
 		HttpClientModule,
 		StoreModule.forRoot({ counter: counterReducer }),
 		// For effects
-		// EffectsModule.forRoot([StoreEffect]),
+		EffectsModule.forRoot([StoreEffect]),
 		StoreDevtoolsModule.instrument({ maxAge: 25 })
 	],
 	providers: [],
