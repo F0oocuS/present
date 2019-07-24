@@ -16,7 +16,7 @@ import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ThnxComponent } from './thnx/thnx.component';
 import { EffectsModule } from '@ngrx/effects';
-import { StoreEffect } from './store/store.effect';
+// import { StoreEffect } from './store/store.effect';
 
 @NgModule({
 	declarations: [
