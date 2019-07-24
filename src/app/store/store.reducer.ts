@@ -38,6 +38,13 @@ export function counterReducer(state: CounterStateInterface = initialState, acti
 			};
 		}
 
+		// case CounterActions.COUNTER_READ_SUCCESS: {
+		// 	return {
+		// 		...state,
+		// 		count: action.payload
+		// 	};
+		// }
+
 		default: {
 			return {
 				...state

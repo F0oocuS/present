@@ -15,6 +15,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ThnxComponent } from './thnx/thnx.component';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreEffect } from './store/store.effect';
 
 @NgModule({
 	declarations: [
@@ -38,7 +40,9 @@ import { ThnxComponent } from './thnx/thnx.component';
 		FormsModule,
 		HttpClientModule,
 		StoreModule.forRoot({ counter: counterReducer }),
-		StoreDevtoolsModule.instrument({ maxAge: 25 }),
+		// For effects
+		// EffectsModule.forRoot([StoreEffect]),
+		StoreDevtoolsModule.instrument({ maxAge: 25 })
 	],
 	providers: [],
 	bootstrap: [AppComponent]
