@@ -3,8 +3,7 @@ import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import { CounterStateInterface } from '../store/store.reducer';
-import { CounterDecrement, CounterIncrement, CounterMultiply, /*CounterRead, CounterReadError,*/ CounterReset } from '../store/store.action';
-// import { selectCounter } from '../store/store.selector';
+import { CounterDecrement, CounterIncrement, CounterMultiply, CounterReset } from '../store/store.action';
 
 @Component({
 	selector: 'app-counter',
@@ -13,7 +12,7 @@ import { CounterDecrement, CounterIncrement, CounterMultiply, /*CounterRead, Cou
 })
 export class CounterComponent implements OnInit {
 	public value = 1;
-	public counter$: Observable<{ count: number }>;
+	public counter$: Observable<any>;
 	// public counterValue$: Observable<number>;
 
 	public constructor(private store: Store<CounterStateInterface>) {}
@@ -22,9 +21,6 @@ export class CounterComponent implements OnInit {
 		this.counter$ = this.store.pipe(select('counter'));
 
 		// this.counterValue$ = this.store.select(selectCounter);
-
-		// For effects
-		// this.store.dispatch(new CounterRead());
 	}
 
 	public onIncrement(): void {

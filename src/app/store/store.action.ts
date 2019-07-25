@@ -1,9 +1,5 @@
 import { Action } from '@ngrx/store';
 
-// export const COUNTER_READ = '[Counter] Read';
-// export const COUNTER_READ_SUCCESS = '[Counter] Read success';
-// export const COUNTER_READ_ERROR = '[Counter] Read error';
-
 export const COUNTER_INCREMENT = '[Counter] Increment';
 export const COUNTER_DECREMENT = '[Counter] Decrement';
 export const COUNTER_RESET = '[Counter] Reset';
@@ -27,25 +23,4 @@ export class CounterMultiply implements Action {
 	constructor(public payload: any) {}
 }
 
-//              For effects
-//
-// export class CounterRead implements Action {
-// 	readonly type = COUNTER_READ;
-// }
-//
-// export class CounterReadSuccess implements Action {
-// 	readonly type = COUNTER_READ_SUCCESS;
-//
-// 	constructor(public payload: number) {}
-// }
-//
-// export class CounterReadError implements Action {
-// 	readonly type = COUNTER_READ_ERROR;
-//
-// 	constructor(public payload: number) {}
-// }
-
 export type CounterActions = CounterIncrement | CounterDecrement | CounterReset | CounterMultiply;
-
-
-// export type CounterActions = CounterIncrement | CounterDecrement | CounterReset | CounterMultiply | CounterRead | CounterReadSuccess | CounterReadError;

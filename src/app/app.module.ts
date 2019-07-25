@@ -40,8 +40,6 @@ import { EffectsModule } from '@ngrx/effects';
 		FormsModule,
 		HttpClientModule,
 		StoreModule.forRoot({ counter: counterReducer }),
-		// For effects
-		// EffectsModule.forRoot([StoreEffect]),
 		StoreDevtoolsModule.instrument({ maxAge: 25 })
 	],
 	providers: [],

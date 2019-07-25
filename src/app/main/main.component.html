@@ -10,7 +10,24 @@
 	<mat-card>
 		<mat-card-title>Project structure</mat-card-title>
 
+		<img mat-card-image src="../../assets/simple-structure.png" alt="">
+
 		<img mat-card-image src="../../assets/components.png" alt="">
+
+		<mat-card-title>Можна виділити 3 основні проблеми!</mat-card-title>
+
+		<mat-list class="block__list">
+			<mat-divider></mat-divider>
+			<mat-list-item class="block__list-item">Стан наших компонент не має бути хаотичним, ми маємо бачити залежності явно.</mat-list-item>
+			<mat-divider></mat-divider>
+			<mat-list-item class="block__list-item">Джерело зміни стану має бути відомим. Якщо стан був змінений ми повинні знати хто був ініціатором змін.</mat-list-item>
+			<mat-divider></mat-divider>
+			<mat-list-item class="block__list-item">Зміна стану не має відбуватись в усіх місцях додатку. Бажано відділити цю частину для кращого розуміння архітектури додатку.</mat-list-item>
+			<mat-divider></mat-divider>
+		</mat-list>
+
+		<mat-card-title>NGRX</mat-card-title>
+		<mat-card-title>Данний пакет модулів імплементує redux-pattern і дає можливість скористатись деякими прийомами, які допомагають зробити додаток більш гнучким і маштабованим!</mat-card-title>
 
 		<mat-list class="block__list">
 			<mat-divider></mat-divider>
